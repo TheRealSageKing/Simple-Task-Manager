@@ -27,7 +27,7 @@ app.use(function (req, res) {
 
 try {
   await sequelize.sync();
-  app.listen(3000, function () {
+  app.listen(3000, "0.0.0.0", function () {
     console.clear();
     console.log("App is running on http://localhost:5500/");
     console.log("App connected to database successfully");

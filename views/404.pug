@@ -1,0 +1,22 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title #{pageName}
+        link(rel="stylesheet", href="css/style.css")
+    body 
+        header
+            .container.section
+              h1 Todo App
+            nav
+                ul.container
+                    li 
+                        a(href="/") Home
+                    li 
+                        a(href="/completed") Completed Tasks
+                    li 
+                        a(href="/pending") Pending Tasks
+        section.container
+            h3 Error
+            p Page was not found

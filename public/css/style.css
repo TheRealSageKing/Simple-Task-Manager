@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: palevioletred;
+}
+
+h1 {
+  font-size: 300% !important;
+}
+
+h2 {
+  font-size: 260% !important;
+}
+
+h3 {
+  font-size: 220% !important;
+}
+
+h4 {
+  font-size: 180% !important;
+}
+
+h5 {
+  font-size: 140% !important;
+}
+
+header {
+  width: 100%;
+}
+
+nav {
+  width: 100%;
+  background-color: rebeccapurple;
+}
+
+nav > ul {
+  width: 100%;
+  display: flex;
+}
+
+nav > ul li {
+  list-style: none;
+  border: 0.5px solid #fff;
+  padding: 10px 0px;
+}
+
+nav > ul li > a {
+  padding: 10px 15px;
+  color: #fff;
+}
+
+nav > ul li > a.active {
+  background-color: #333;
+  color: #fff;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section,
+section {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.task_item-list {
+  margin-top: 25px;
+  list-style: none;
+}
+
+.task_item {
+  display: flex;
+  border: 1px solid #333;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: -1px;
+}
+
+.task_item .task_item-sn {
+  padding: 10px;
+  width: 5%;
+  border-right: 1px solid #333;
+  text-align: center;
+}
+
+.task_item .task_item-title {
+  flex-grow: 2;
+  padding: 10px;
+  width: 80%;
+}
+
+.task_item .task_item-title.strike {
+  text-decoration: line-through;
+}
+
+.task_item .task_item-buttons {
+  padding: 5px;
+  width: 15%;
+  border-left: 1px solid #333;
+}
+
+.task_item-buttons > .btn {
+  padding: 7px 10px;
+  border: transparent;
+  margin: 0 5px;
+  border-radius: 2px;
+  font-size: 80%;
+}
+
+.btn.success {
+  background-color: limegreen;
+  border-color: limegreen;
+  color: #fff;
+}
+
+.btn.info {
+  background-color: #333;
+  border-color: #333;
+  color: #fff;
+}
+
+.new_task-form {
+  width: 60%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container {
+  margin-bottom: 5px;
+}
+
+.form-container > input {
+  border: 1px solid #999;
+  padding: 5px;
+  width: 100%;
+}

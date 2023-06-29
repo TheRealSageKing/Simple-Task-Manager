@@ -1,0 +1,29 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title #{pageName}
+        link(rel="stylesheet", href="css/style.css")
+    body 
+        header 
+            .container.section
+              h1 Todo App
+            nav
+                ul.container
+                    li 
+                        a(href="/") Home
+                    li 
+                        a(href="/completed") Completed Tasks
+                    li 
+                        a.active(href="/pending") Pending Tasks
+        section.container
+            h3 Pending Tasks 
+            ul.task_item-list 
+               - var n = 0;
+               for t in tasks
+                li.task_item 
+                    span.task_item-sn #{++n}
+                    .task_item-title #{t.title}
+                    .task_item-buttons
+                        a.btn(href="/toggle-status/"+t.id class=(t.completed?'info':'success')) #{t.completed ? 'Undo' :'Done'}

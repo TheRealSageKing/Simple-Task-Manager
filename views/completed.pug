@@ -1,0 +1,12 @@
+extends layouts/default.pug
+
+block content 
+  section.container 
+    h3 Completed Task List 
+    ul.task_item-list 
+        - var n = 0;
+        for t in tasks
+          li.task_item 
+              span.task_item-sn #{++n}
+              .task_item-title #{t.title}
+              .task_item-button #{dayjs(t.updatedAt).fromNow(true)}

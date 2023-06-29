@@ -29,7 +29,7 @@ try {
   await sequelize.sync();
   app.listen(3000, function () {
     console.clear();
-    console.log("App is running on http://localhost:3000/");
+    console.log("App is running on http://localhost:5500/");
     console.log("App connected to database successfully");
   });
 } catch (error) {

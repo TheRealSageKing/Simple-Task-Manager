@@ -6,7 +6,7 @@
 
 <h2>🚀 Demo</h2>
 
-[https://simpletaskman.netlify.app](https://simpletaskman.netlify.app)
+[https://simple-task-manager.up.railway.app/](https://simple-task-manager.up.railway.app/)
 
 <h2>🧐 Features</h2>
 

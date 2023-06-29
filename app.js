@@ -27,9 +27,9 @@ app.use(function (req, res) {
 
 try {
   await sequelize.sync();
-  app.listen(3000, "0.0.0.0", function () {
-    console.clear();
-    console.log("App is running on http://localhost:5500/");
+  const port = process.env.PORT || 3000;
+  app.listen(port, "0.0.0.0", function () {
+    console.log(`App is running on http://localhost:/${port}`);
     console.log("App connected to database successfully");
   });
 } catch (error) {
